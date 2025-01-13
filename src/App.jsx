@@ -97,7 +97,7 @@ function Loader() {
 }
 function Navbar({ children }) {
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar h-10 md:h-20">
       <Logo />
       {children}
     </nav>

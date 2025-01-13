@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color-primary: #6741d9;
   --color-primary-light: #7950f2;
@@ -326,4 +330,124 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsive  */
+@media (min-width: 768px) {
+  .nav-bar {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .search {
+    padding: 0.7rem 1rem;
+    font-size: 1.4rem;
+    width: 20rem;
+  }
+  .logo {
+    gap: 0.2rem;
+  }
+
+  .logo span {
+    font-size: 1.5rem;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+
+  .num-results {
+    font-size: 1.7rem;
+  }
+  .main {
+    margin-top: 1.5rem;
+    height: calc(100vh - 7.2rem - 3 * 2.4rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: center;
+  }
+
+  .box {
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    overflow: scroll;
+  }
+}
+/* @media screen and (min-device-width: 768px) and (max-device-width: 10px) */
+@media (min-width: 768px) {
+  .nav-bar {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .search {
+    padding: 0.8rem 1.9rem;
+    font-size: 1.4rem;
+    width: 25rem;
+  }
+  .logo {
+    gap: 0.8rem;
+  }
+
+  .logo span {
+    font-size: 2rem;
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+
+  .num-results {
+    font-size: 1.9rem;
+  }
+
+  .main {
+    margin-top: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-bar {
+    height: 5.5rem;
+    padding: 0 3rem;
+  }
+  .search {
+    border: none;
+    padding: 1.1rem 1.6rem;
+    font-size: 1.3rem;
+    border-radius: 0.7rem;
+    width: 35rem;
+    transition: all 0.3s;
+    color: var(--color-text);
+  }
+  .logo {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .logo span {
+    font-size: 2.2rem;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .num-results {
+    justify-content: end;
+    font-size: 2rem;
+  }
+  /* .main {
+    display: flex;
+    flex-direction: row;
+  }
+  .box {
+    max-width: 50rem;
+    height: 100%;
+  } */
 }
